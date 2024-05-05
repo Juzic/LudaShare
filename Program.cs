@@ -15,18 +15,13 @@ namespace HelloWorld
     {
         public static void Main(string[] args)
         {
+
+            Test test = new Test();
+
+            test.nazevMetody();
             // comment
 
-
             //Console.WriteLine(Convert.ToChar(myString));
-
-
-
-
-
-
-
-
 
             
             //Dont know how to seal it in a method
