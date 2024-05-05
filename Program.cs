@@ -19,39 +19,6 @@ namespace HelloWorld
 
             //Console.WriteLine(Convert.ToChar(myString));
 
-            /*
-            Console.WriteLine("Write age:");
-            int hostAge = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Your age is " +  hostAge);
-            */
-
-
-
-
-            string[] cars = { "Volvo", "BMW", "Audi" };
-
-            Console.WriteLine(cars[0]);
-
-            cars[0] = "Skoda";
-
-            Console.WriteLine(cars[0]);
-
-            Console.WriteLine(cars.Length);
-
-
-            /*
-            string name1 = string.Concat(firstName, lastName);
-
-
-            Console.WriteLine(name);
-
-
-            if (string.IsNullOrEmpty(firstName))
-            {
-                Console.WriteLine("srz bro");
-            }
-
-            */
 
 
 
@@ -60,7 +27,7 @@ namespace HelloWorld
 
 
 
-            /*
+            
             //Dont know how to seal it in a method
             Console.WriteLine("Enter the number of numbers to be sorted:");
             int n = Convert.ToInt32(Console.ReadLine());
@@ -96,19 +63,8 @@ namespace HelloWorld
 
             }    
 
-            /*
-            switch (choose)
-            {
-                case == 1:
-                        printBubbleSorted(array);
-                    break;
-                  
-            }
-            */
 
 
-
-            /*
         }
 
 
@@ -218,7 +174,6 @@ namespace HelloWorld
             Console.WriteLine();
 
 
-            */
 
 
         }
