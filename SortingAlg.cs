@@ -9,11 +9,7 @@ namespace HelloWorld
     class SortingAlg
     {
         
-
-
-        int[] array = { 5, 10, 55 };
-        
-        static void bubbleSort(int[] array)
+        public void bubbleSort(int[] array)
         {
             
             int temp;
@@ -30,7 +26,44 @@ namespace HelloWorld
                     }
                 }
             }
-            
         }
+
+
+        public void shellSort(int[] array)
+        {
+            int n = array.Length;
+            for (int gap = n / 2; gap > 0; gap /= 2)
+            {
+                for (int i = gap; i < n; i += 1)
+                {
+                    int temp = array[i];
+                    int j;
+                    for (j = i; j >= gap && array[j - gap] > temp; j -= gap)
+                        array[j] = array[j - gap];
+                    array[j] = temp;
+
+                }
+            }
+        }
+
+        public void selectSort(int[] array)
+        {
+            int n = array.Length;
+            for (int i = 0; i < n - 1; i++)
+            {
+                int min_idx = i;
+                for (int j = i + 1; j < n; j++)
+                {
+                    if (array[j] < array[min_idx])
+                        min_idx = j;
+
+                    int temp = array[min_idx];
+                    array[min_idx] = array[i];
+                    array[i] = temp;
+                }
+            }
+        }
+
+
     }
 }
